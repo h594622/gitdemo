@@ -33,3 +33,5 @@ public class Oppgave5 {
 	}
 
 }
+
+//Dette er en kommentar
