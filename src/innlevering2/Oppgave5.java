@@ -1,5 +1,6 @@
 package innlevering2;
 
+//Dette er en kommentar
 
 import static javax.swing.JOptionPane.*;
 import static java.lang.Integer.*;
