@@ -9,13 +9,15 @@ public class Oppgave5 {
 	
 		
 		final int ANTALL = 10;
-		String melding = "Student";
 		for (int i = 1; i<=ANTALL; i++)  {
+	
+			int tallKarakter = parseInt(showInputDialog("Student " + i + " Tallkarakter : "));
 		
+			while (tallKarakter < 0 || tallKarakter > 100) { 
+			tallKarakter = parseInt(showInputDialog("Ugyldig karakter, prøv igjen: "));
+			}
 			
-			int tallKarakter = parseInt(showInputDialog(melding + " " + i + " Tallkarakter : "));
 			String karakter = tallKarakter + " tilsvarer: ";
-		
 			
 			if (tallKarakter >= 90 && tallKarakter <= 100) karakter += "A";
 			else if (tallKarakter >= 80 && tallKarakter <= 89) karakter += "B";
@@ -24,11 +26,12 @@ public class Oppgave5 {
 			else if (tallKarakter >= 40 && tallKarakter <= 49) karakter += "E";
 			else if (tallKarakter >= 0 && tallKarakter <= 39) karakter += "E";
 			else karakter += "Ugyldig karakter!";
-		
-		showMessageDialog(null, karakter);
-		
+
+			
+			showMessageDialog(null, karakter);
+
+			}
 		}
 	
-	}
 
 }

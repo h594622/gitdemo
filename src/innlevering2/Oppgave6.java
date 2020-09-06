@@ -16,7 +16,7 @@ public class Oppgave6 {
 			antall++;
 		}
 		
-		showMessageDialog(null, "Resultat = " + sum);
+		showMessageDialog(null, n + "! " + " = " + sum);
 		
 	}
 	
